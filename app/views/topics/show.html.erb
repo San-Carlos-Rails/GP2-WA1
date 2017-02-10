@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="custom-container">
+	<p id="notice"><%= notice %></p>
+	<div class="well">
 
-<p>
-  <strong>Title:</strong>
-  <%= @topic.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @topic.description %>
-</p>
-
-<%= link_to 'Edit', edit_topic_path(@topic) %> |
-<%= link_to 'Back', topics_path %>
+	
+	  
+	  <h3 class="text-center"> <%= @topic.title %> </h3>
+	  <hr class="hr">
+	  <strong>Description:</strong>
+	  <p>	  <%= @topic.description %> </p>
+	  <hr class="hr">
+	<div class="btn btn-info">
+		<%= link_to 'Edit', edit_topic_path(@topic) %> |
+		<%= link_to 'Back', topics_path %>
+	</div>
+	</div>
+</div>

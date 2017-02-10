@@ -1,6 +1,13 @@
-<h1>Editing Topic</h1>
+<div class="custom-container">
+	<div class="well">
+		<h3>Editing Topic</h3>
+		<hr class="hr">
 
-<%= render 'form', topic: @topic %>
-
-<%= link_to 'Show', @topic %> |
-<%= link_to 'Back', topics_path %>
+		<%= render 'form', topic: @topic %>
+		<hr class="hr">
+		<div class="btn btn-info">
+			<%= link_to 'Show', @topic %> |
+			<%= link_to 'Back', topics_path %>
+		</div>
+	</div>
+</div>
